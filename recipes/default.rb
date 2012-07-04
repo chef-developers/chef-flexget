@@ -4,6 +4,14 @@ python_pip "flexget" do
   action :install
 end
 
+plugins = %w{ transmissionrpc }
+
+plugins.each do |plugin|
+  python_pip plugin do
+    action :install
+  end
+end
+
 user = node['flexget']['user']
 
 directory "#{node['flexget']['home_dir']}/.flexget" do

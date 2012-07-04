@@ -1,5 +1,7 @@
 default['flexget']['user'] = 'root'
 default['flexget']['home_dir'] = '/root'
+default['flexget']['cron_command'] = '/usr/local/bin/flexget --cron'
+default['flexget']['cron_hours'] = '*/3'
 
 default['flexget']['config']['tv_shows_dir'] = '/tmp/tv'
 default['flexget']['config']['movies_dir'] = '/tmp/movies'

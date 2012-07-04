@@ -22,6 +22,8 @@ directory "#{node['flexget']['home_dir']}/.flexget" do
 end
 
 template "#{node['flexget']['home_dir']}/.flexget/config.yml" do
+  owner user
+  group user
   source "config.yml.erb"
   variables(:config => node['flexget']['config'])
 end

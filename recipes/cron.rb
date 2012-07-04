@@ -2,8 +2,7 @@
 
 
 cron "flexget" do
-  minute "30"
-  hour "*/3"
+  hour node['flexget']['cron_hours']
   user node['flexget']['user']
-  command "flexget"
+  command node['flexget']['cron_command']
 end

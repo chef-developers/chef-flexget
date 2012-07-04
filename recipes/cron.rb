@@ -3,6 +3,6 @@
 
 cron "flexget" do
   minute "30"
-  user node['flexget']['cron']['user']
+  user node['flexget']['user']
   command "flexget"
 end

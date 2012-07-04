@@ -25,7 +25,6 @@ presets:
 
 feeds:
   tvfeeds:
-    #rss: http://showrss.karmorra.info/rss.php?user_id=29872&hd=2&proper=1
     rss: <%= @config['tv_rss_url']%>
     preset:
       - tv
@@ -36,7 +35,6 @@ feeds:
     priority: 1
     imdb_list:
       list: watchlist
-      #user_id: ur23467994
       user_id: <%= @config['imdb_user_id']%>
     accept_all: yes
     queue_movies:

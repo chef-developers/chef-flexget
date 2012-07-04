@@ -1,1 +1,11 @@
-default['flexget']['cron']['user'] = 'root'
+default['flexget']['user'] = 'root'
+default['flexget']['home_dir'] = '/root'
+
+default['flexget']['config']['tv_shows_dir'] = '/tmp/tv'
+default['flexget']['config']['movies_dir'] = '/tmp/movies'
+default['flexget']['config']['transmission_user'] = ''
+default['flexget']['config']['transmission_password'] = ''
+default['flexget']['config']['transmission_host'] = 'localhost'
+default['flexget']['config']['transmission_port'] = '9091'
+default['flexget']['config']['tv_rss_url'] = ''
+default['flexget']['config']['imdb_user_id'] = ''

@@ -5,7 +5,7 @@ presets:
     set:
       path: "<%= @config['tv_shows_dir']%>/{{series_name}}/Season {{series_season}}/"
     all_series:
-      quality: 720p hdtv
+      quality: hdtv
 
   movies:
     set:
@@ -38,7 +38,7 @@ feeds:
       user_id: <%= @config['imdb_user_id']%>
     accept_all: yes
     queue_movies:
-      quality: 720p bluray
+      quality: 720p
       force: no
 
   isohuntmovies_search:

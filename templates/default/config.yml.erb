@@ -35,6 +35,12 @@ feeds:
     accept_all: yes
     preset:
       - torrent
+  kat_subscriptions:
+    rss: <%= @config['kat_sub_rss_url'] %>
+    accept_all: yes
+    preset:
+      - torrent
+      - tv
 
   imdb_movie_queue_fill:
     # priority plugin is used so that this feed runs before the actual download feed
